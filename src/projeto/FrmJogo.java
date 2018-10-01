@@ -144,7 +144,7 @@ public class FrmJogo
         ArrayList<Base> lixo = new ArrayList();
            fimJogo=false;
         Player player = new Player("img/frog.png");
-        player.setLargura(40);
+        player.setLargura(45);
         player.setAltura(40);
         player.setIncY(0);
         player.setIncX(0);
@@ -156,9 +156,9 @@ public class FrmJogo
         
         
         for (int i = 0; i < 5; i++) {
-            Inimigo b = new Inimigo();
-            b.setLargura(80);
-            b.setAltura(30);
+            Inimigo b = new Inimigo("img/cop.png");
+            b.setLargura(76);
+            b.setAltura(24);
             b.setY(50+(90*i));
             b.setX(r.nextInt((getWidth())));
             if(i>2)
@@ -177,7 +177,7 @@ public class FrmJogo
         while (true) {
             g = getBufferStrategy().getDrawGraphics();
             //Limpa a tela
-            g.setColor(Color.WHITE);
+            g.setColor(Color.GRAY);
             g.fillRect(0, 0, getWidth(), getHeight());
             //Desenha um oval
 

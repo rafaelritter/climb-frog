@@ -201,11 +201,6 @@ public class FrmJogo
                 b.desenhar(g);
             }
 
-            
-           
-            
-            long tempo = System.currentTimeMillis();
-
             Colisao aux = player.trataColisao(getWidth(), getHeight());
             if (aux == Colisao.UP) {
                     lixo.add(player);
